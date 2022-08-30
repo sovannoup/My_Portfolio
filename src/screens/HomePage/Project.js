@@ -12,7 +12,6 @@ export default function Project(props) {
     const fetch = async () => {
       await firebase.db
         .collection("t_projects")
-        .limit(6)
         .get()
         .then((snapshot) => {
           snapshot.docs.forEach((doc) => {
@@ -34,7 +33,7 @@ export default function Project(props) {
       >
         {projects.map((item, index) => (
           <div key={index} className="item">
-            <img src={webImg} alt="web" className="itemImg" />
+            <img src={item.imageUrl} alt="web" className="itemImg" />
             <h1 className="itemTitle">{item.title}</h1>
             <p className="itemDesc">{item.description}</p>
             <div

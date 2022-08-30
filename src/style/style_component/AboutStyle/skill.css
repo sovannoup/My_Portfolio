@@ -37,6 +37,7 @@
   }
   .skTitle {
     font-size: 20px;
+    width: 150px;
   }
 }
 @media (max-width: 768px) {
@@ -48,6 +49,7 @@
   }
   .skTitle {
     font-size: 18px;
+    width: 100px;
   }
   .skillInfo {
     font-size: 12px;

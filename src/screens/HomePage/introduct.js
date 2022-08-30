@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
-import GlobalStyle from "../../style/GlobleStyle.css";
 import "../../style/style_component/HomeStyle/aboutme.css";
-
-import webImg from "../../assets/images/4.jpg";
-
-const createHistory = require("history").createBrowserHistory;
-const history = createHistory();
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -21,9 +13,11 @@ export default class HomePage extends Component {
           <div className="aboutme">
             <h1 className="about">ABOUT ME</h1>
             <p className="description">
-              I am a freelance website designer and developer from Chittagong,
-              Bangladesh. I create professional websites. I love art and always
-              try to show unique views to the audience through my design.
+              I am a A full-stack developer who works within software
+              development and is knowledgeable in both the Website Development
+              and App Development. I work work to create a seamless user
+              experience through their diverse skill and try to show unique
+              views to the audience through my design.
             </p>
             <div
               style={{
@@ -41,7 +35,11 @@ export default class HomePage extends Component {
             </div>
           </div>
           <div className="imgClass">
-            <img src={webImg} className="img" />
+            <img
+              src="https://lh5.googleusercontent.com/O32WRuRDHigriMypXZqJaXDlzkbyfFXzuLVlAYYuEjoNB3SME2QymauiXfUUIPY2-mg=w2400"
+              className="img"
+              alt="new"
+            />
           </div>
         </div>
       </div>

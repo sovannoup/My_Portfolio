@@ -1,16 +1,8 @@
 import React, { Component, useEffect } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
-import GlobalStyle from "../../style/GlobleStyle.css";
 import "../../style/style_component/AboutStyle/skill.css";
 
 import WantContact from "../HomePage/wantcontact";
-
-const createHistory = require("history").createBrowserHistory;
-const history = createHistory();
-
 export default function Skill(props) {
-
   return (
     <div className="education">
       {props.education && (

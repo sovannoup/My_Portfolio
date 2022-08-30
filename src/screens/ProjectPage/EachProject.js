@@ -7,7 +7,7 @@ export default function EachProject(props) {
     <div className="ProjectContainer">
       {props.data.map((item, index) => (
         <div key={index} className="pj">
-          <img src={webImg} alt="web" className="itemImg" />
+          <img src={item.imageUrl} alt="web" className="itemImg" />
           <h1 className="itemTitle">{item.title}</h1>
           <p className="itemDesc">{item.description}</p>
           <div
