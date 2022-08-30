@@ -1,4 +1,5 @@
-import React, { Component, useEffect, useState } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useEffect, useState } from "react";
 import "../../style/style_component/ProjectStyle/mainProject.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -10,19 +11,21 @@ export default function Project() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const fetch = async () => {
-      await firebase.db
-        .collection("t_projects")
-        .limit(6)
-        .get()
-        .then((snapshot) => {
-          snapshot.docs.forEach((doc) => {
-            setProjects((projects) => [...projects, doc.data()]);
-          });
-        });
-    };
-    fetch();
+    fetch(6);
   }, []);
+
+  const fetch = async (num) => {
+    setProjects([]);
+    await firebase.db
+      .collection("t_projects")
+      .limit(num)
+      .get()
+      .then((snapshot) => {
+        snapshot.docs.forEach((doc) => {
+          setProjects((projects) => [...projects, doc.data()]);
+        });
+      });
+  };
 
   return (
     <>
@@ -38,10 +41,13 @@ export default function Project() {
           </div>
         </div>
         <EachProject data={projects ? projects : []} />
-        <div className="loadmoreDiv">
-          <a href="#" className="loadMore">
-            Load More
-          </a>
+        <div
+          className="loadmoreDiv"
+          onClick={async () => {
+            await fetch(40);
+          }}
+        >
+          <div className="loadMore">Load More</div>
         </div>
       </div>
       <Footer />

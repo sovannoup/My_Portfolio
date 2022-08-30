@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
-import GlobalStyle from "../../style/GlobleStyle.css";
 import "../../style/style_component/HomeStyle/welcome.css";
-
-import Anime from "../../assets/images/1.jpg";
-
-const createHistory = require("history").createBrowserHistory;
-const history = createHistory();
 
 export default class Welcome extends Component {
   constructor(props) {
@@ -32,7 +24,11 @@ export default class Welcome extends Component {
             </p>
           </div>
           <div className="imgDiv">
-            <img src={Anime} className="myImg" />
+            <img
+              src="https://lh4.googleusercontent.com/bwr3h7Nwt2bP2n2vtow9E9qPaClR3Wg-41vRcaNjckdthnFRa3dgqws5rcmzVRmjZqc=w2400"
+              className="myImg"
+              alt="MainImage"
+            />
           </div>
         </div>
       </div>

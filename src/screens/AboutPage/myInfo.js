@@ -1,12 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
-import GlobalStyle from "../../style/GlobleStyle.css";
 import "../../style/style_component/AboutStyle/myinfo.css";
 import img from "../../assets/images/2.jpg";
-
-const createHistory = require("history").createBrowserHistory;
-const history = createHistory();
 
 export default class myInfo extends Component {
   constructor(props) {
@@ -50,7 +45,10 @@ export default class myInfo extends Component {
           </div>
         </div>
         <div className="second">
-          <img src={img} className="balbla" />
+          <img
+            src="https://lh3.googleusercontent.com/LVA4d7o5ZUHxNXi01sYqybEco3aWB6UHQW6EQuo6K0f0UOlILeC7M7e0DFq9_pnMmBk=w2400"
+            className="balbla"
+          />
         </div>
       </div>
     );
