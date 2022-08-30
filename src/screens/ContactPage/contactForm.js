@@ -7,8 +7,8 @@ import "../../style/style_component/ContactStyle/contactForm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 
-const createHistory = require("history").createBrowserHistory;;
-const history = createHistory();;
+const createHistory = require("history").createBrowserHistory;
+const history = createHistory();
 
 export default function contactForm(props) {
   return (
@@ -48,6 +48,7 @@ export default function contactForm(props) {
         <input
           placeholder="Enter your email"
           className="userInput"
+          type="email"
           value={props.email}
           onChange={(e) => {
             props.changeEmail(e.target.value);

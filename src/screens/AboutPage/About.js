@@ -1,14 +1,8 @@
 import React, { Component, useEffect, useState } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
-import GlobalStyle from "../../style/GlobleStyle.css";
 import MyInfo from "./myInfo";
 import Skill from "./skill";
 import firebase from "../../firebase";
 import Footer from "../Footer";
-
-const createHistory = require("history").createBrowserHistory;
-const history = createHistory();
 
 export default function About() {
   const [education, setEducation] = useState();

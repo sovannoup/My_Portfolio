@@ -6,8 +6,6 @@ import firebase from "../../firebase";
 import Footer from "../Footer";
 import EachProject from "./EachProject";
 
-const createHistory = require("history").createBrowserHistory;
-
 export default function Project() {
   const [projects, setProjects] = useState([]);
 

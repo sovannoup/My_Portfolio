@@ -4,7 +4,7 @@ import { Link, Redirect } from "react-router-dom";
 import GlobalStyle from "../../style/GlobleStyle.css";
 import "../../style/style_component/HomeStyle/welcome.css";
 
-import Anime from "../../assets/images/anime.jpeg";
+import Anime from "../../assets/images/1.jpg";
 
 const createHistory = require("history").createBrowserHistory;
 const history = createHistory();
