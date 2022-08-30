@@ -9,10 +9,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.60",
-    "@material-ui/utils": "^4.11.2",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -22,15 +18,14 @@
     "material-table": "^1.69.3",
     "moment": "^2.29.1",
     "nodemon": "^2.0.15",
-    "react": "^17.0.2",
+    "react": "^16.6.0",
     "react-bootstrap": "^1.2.2",
-    "react-dom": "^17.0.2",
+    "react-dom": "^16.6.0",
     "react-elastic-carousel": "^0.11.5",
     "react-fontawesome": "^1.7.1",
     "react-meta-tags": "^1.0.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.1.2",
-    "react-router-addons-controlled": "0.0.1",
     "react-router-dom": "^5.1.2",
     "react-router-redux": "^4.0.8",
     "react-scripts": "4.0.3",
@@ -72,6 +67,7 @@
     "prettier": "2.7.1"
   },
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "npm": "8.x"
   }
 }
