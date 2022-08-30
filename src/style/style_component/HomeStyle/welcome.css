@@ -1,0 +1,101 @@
+.welcomeContainer {
+  display: flex;
+}
+.body {
+	width: 60%;
+	color: white;
+	margin-top: 250px;
+}
+.welcome {
+  font-size: 30;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.name {
+  margin-left: 330px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.job {
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 25px;
+}
+.bbbbb{
+	color: white;
+	opacity: 0.7;
+	margin-right: 10%;
+	margin-top: 20px;
+	line-height: 25px;
+}
+.hehe {
+  display: flex;
+}
+.imgDiv {
+  width: 40%;
+  height: 750px;
+}
+.myImg{
+	border-radius: 20px;
+	margin-top: 50px;
+    border: solid 2px white;
+}
+
+@media (max-width: 1025px) {
+  /* welcome */
+  .body {
+    margin-top: 150px;
+  }
+  .welcome {
+    font-size: 35px;
+  }
+  .job {
+    font-size: 23px;
+  }
+  .imgDiv {
+    height: 500px;
+  }
+  .bbbbb {
+    font-size: 15px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 770px) {
+  /* welcome */
+  .body {
+    margin-top: 130px;
+  }
+  .welcome {
+    font-size: 22px;
+  }
+  .job {
+    font-size: 18px;
+  }
+  .imgDiv {
+    margin-top: 50px;
+    height: 350px;
+  }
+  .bbbbb {
+    font-size: 13px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 560px) {
+  /* welcome */
+  .hehe {
+    flex-direction: column;
+  }
+  .body {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .imgDiv {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

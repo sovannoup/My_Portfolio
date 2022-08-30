@@ -1,0 +1,55 @@
+.education {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.onePack {
+  margin-top: 100px;
+}
+.skTitle {
+  width: 200px;
+}
+.skillHeader{
+    font-weight: 700;
+    color: white;
+    opacity: 0.7;
+}
+.eachrow {
+  display: flex;
+  color: white;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  opacity: 0.7;
+  margin-top: 30px;
+  align-items: center;
+}
+.skillInfo {
+    color: white;
+	opacity: 0.7;
+	padding: 8px 10px;
+    margin: 5px 10px;
+	border-radius: 5px;
+	border: 2px solid white;
+    font-size: 14px;
+}
+@media (max-width: 1024px) {
+  .skillHeader {
+    font-size: 25px;
+  }
+  .skTitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  .skillHeader {
+    font-size: 24px;
+  }
+  .skTitle {
+    font-size: 18px;
+  }
+  .skillInfo {
+    font-size: 12px;
+  }
+}

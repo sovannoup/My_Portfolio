@@ -1,0 +1,81 @@
+.projectHeader {
+  margin-top: 50px;
+}
+.pjHead {
+  text-align: center;
+}
+.small{
+    font-size: 20px;
+    color: white;
+    opacity: 0.7;
+}
+.big{
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    opacity: 0.7;
+}
+.inputDiv{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 300px;
+    position: relative;
+}
+.projectInput {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.searchIcon {
+  position: absolute;
+  color: #1e1e1e;
+  right: 10px;
+  height: 100%;
+  color: #1e1e1e;
+  font-size: 15px;
+}
+
+.loadmoreDiv {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* loadmore btn */
+
+.loadMore {
+	color: white;
+	opacity: 0.9;
+	padding: 13px 30px;
+	margin-top: 20px;
+	font-size: 18px;
+	border-radius: 10%;
+	border: 3px solid white;
+}
+
+.loadMore:hover {
+	text-decoration: none;
+	background-color: white;
+	opacity: 0.5;
+	color: #1e1e1e;
+}
+@media (max-width: 1024px) {
+  .small {
+    font-size: 18px;
+  }
+  .big {
+    font-size: 35px;
+  }
+  .loadMore {
+    font-size: 15px;
+  }
+  .projectInput {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .loadMore {
+    font-size: 13px;
+    padding: 7px 20px;
+  }
+}

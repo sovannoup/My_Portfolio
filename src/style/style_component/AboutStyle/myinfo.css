@@ -1,0 +1,96 @@
+.myInfo {
+  width: 100%;
+  margin-top: 90px;
+  display: flex;
+  color: rgb(134, 130, 130);
+  padding: 0 20px;
+}
+.first {
+  width: 67%;
+  margin-right: 3%;
+  padding-top: 100;
+  padding-right: 50;
+}
+.second {
+  width: 40%;
+}
+.hello{
+    display: flex;
+    color: white;
+    opacity: 0.7;
+}
+.myJob{
+    color: white;
+    font-weight: 600;
+    font-size: 34px;
+    opacity: 0.7;
+    margin: 20px 0;
+}
+.oneParag {
+  margin-bottom: 20px;
+}
+.descc{
+    color: white;
+    opacity: 0.7;
+    font-size: 15px;
+}
+.conbtn{
+    color: #1e1e1e;
+	opacity: 0.7;
+	background-color: white;
+	padding: 13px 30px;
+	font-size: 18px;
+	border-radius: 10%;
+	border: 2px solid #1e1e1e;
+}
+.conbtn:hover {
+  text-decoration: none;
+  color: #1e1e1e;
+  opacity: 0.5;
+}
+.balbla{
+    border-radius: 20px;
+    border: solid 2px white;
+}
+
+@media (max-width: 1025px) {
+  .myInfo {
+    margin-top: 10 0px;
+  }
+  .hello {
+    font-size: 23px;
+  }
+  .myJob {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  .descc {
+    font-size: 14px;
+  }
+  .conbtn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .myInfo {
+    flex-direction: column;
+  }
+  .first {
+    width: 100%;
+    text-align: center;
+  }
+  .second {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .hello {
+    font-size: 15px;
+  }
+  .myJob {
+    font-size: 24px;
+  }
+  .descc {
+    font-size: 13px;
+  }
+}

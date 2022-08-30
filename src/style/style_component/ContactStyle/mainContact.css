@@ -1,0 +1,25 @@
+.contactHeader {
+  margin-top: 50px;
+}
+.ctHead {
+  text-align: center;
+}
+.hh{
+    font-size: 20px;
+    color: white;
+    opacity: 0.7;
+}
+.oo{
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    opacity: 0.7;
+}
+@media (max-width: 1024px) {
+  .hh {
+    font-size: 18px;
+  }
+  .oo {
+    font-size: 35px;
+  }
+}

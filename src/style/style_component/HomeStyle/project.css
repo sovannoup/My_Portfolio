@@ -1,0 +1,92 @@
+.project {
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+}
+.title {
+	color: white;
+	font-weight: 600;
+	margin-bottom: 50px;
+	opacity: 0.7;
+}
+.item{
+	cursor: pointer;
+	text-align: center;
+	padding: 15px;
+	margin: 0 10px;
+	background-color: white;
+	opacity: 0.9;
+	border-radius: 20px;
+	border: solid 5px #132c4b;
+}
+.itemImg {
+  width: 100%;
+  height: 250px;
+  border-radius: 5%;
+}
+.itemTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #132c4b;
+  margin-top: 25px;
+}
+.itemDesc {
+  font-size: 15px;
+  margin: 10px;
+  color: #132c4b;
+}
+.lcUbOd{
+	background-color: #0f1624 !important;
+	box-shadow: 0 0 1px 3px white !important;
+	opacity: 0.7;
+}
+.eaptOe {
+  box-shadow: 0 0 1px 3px white !important;
+  opacity: 0.1;
+}
+.eaptOe:hover{
+	box-shadow: 0 0 1px 3px white !important;
+	opacity: 0.4;
+}
+.skill {
+  color: #132c4b;
+  opacity: 0.5;
+  padding: 5px;
+  margin: 5px;
+  font-size: 13px;
+  border: 2px solid #132c4b;
+  border-radius: 10px;
+}
+
+@media (max-width: 1025px) {
+  .project {
+    margin-top: 150px;
+  }
+  .title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .project {
+    margin-top: 130px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .itemTitle {
+    font-size: 15px;
+  }
+  .itemDesc {
+    font-size: 13px;
+  }
+  .lcUbOd,
+  .eaptOe {
+    width: 5px !important;
+    height: 5px !important;
+  }
+}
+@media (max-width: 560px) {
+  .project {
+    margin-top: 100px;
+  }
+}

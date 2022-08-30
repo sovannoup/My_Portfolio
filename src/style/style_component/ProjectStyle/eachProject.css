@@ -1,0 +1,57 @@
+.ProjectContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* each box project */
+
+.pj{
+    height: 100%;
+    width: 29%;
+    min-width: 300px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 5px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 5px #132c4b;
+}
+.itemImg {
+  width: 100%;
+  height: 250px;
+  border-radius: 5%;
+}
+.itemTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #132c4b;
+  margin-top: 25px;
+}
+.itemDesc {
+  font-size: 15px;
+  color: #132c4b;
+}
+.lcUbOd{
+    background-color: #0f1624 !important;
+    box-shadow: 0 0 1px 3px white !important;
+    opacity: 0.7;
+}
+.eaptOe {
+  box-shadow: 0 0 1px 3px white !important;
+  opacity: 0.1;
+}
+.eaptOe:hover{
+    box-shadow: 0 0 1px 3px white !important;
+    opacity: 0.4;
+}
+.skill {
+  color: #132c4b;
+  opacity: 0.5;
+  padding: 5px;
+  margin: 5px;
+  font-size: 13px;
+  border: 2px solid #132c4b;
+  border-radius: 10px;
+}

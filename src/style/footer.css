@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgb(21, 19, 19);
+  border: solid 1px #9a9da2;
+  padding: 30px;
+}
+.subFooter {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.infoClass {
+  width: 50%;
+}
+.footerhead{
+    font-size: 25px;
+    color: white;
+    opacity: 0.7;
+}
+.footerName {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  opacity: 0.7;
+}
+.info {
+  font-size: 15px;
+  color: white;
+  opacity: 0.7;
+  padding-right: 10px;
+}
+.contactInfo, .linkSocial{
+    font-size: 15px;
+    color: white;
+    opacity: 0.7;
+}
+.linkSocial:hover {
+  font-size: 15px;
+  color: #777b82;
+  opacity: 0.7;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .subFooter {
+    flex-direction: column;
+    text-align: center;
+  }
+  .infoClass {
+    width: 80%;
+  }
+  .footerName {
+    font-size: 25px;
+  }
+  .info {
+    font-size: 13px;
+  }
+  .eachClass {
+    margin-top: 20px;
+  }
+  .footerhead {
+    font-size: 20px;
+  }
+  .contactInfo,
+  .linkSocial {
+    font-size: 13px;
+  }
+}

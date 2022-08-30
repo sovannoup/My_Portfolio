@@ -1,0 +1,145 @@
+.contactContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  width: 45%;
+}
+.eachContact {
+    display: flex;
+    align-items: center;
+    border: 2px solid  white;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.circleIcon {
+  background-color: rgb(21, 19, 19);
+  border: 0.5px solid white;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.fLogo{
+    font-weight: 600;
+    font-size: 30px;
+    height: 100%;
+    color: white;
+    opacity: 0.7;
+}
+.phoneNum{
+    color: white;
+    opacity: 0.7;
+}
+.iconnn{
+    color: white;
+    font-size: 23px;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+}
+
+/* Midle Line */
+.line{
+    height: 250px;
+    margin-top: 30px;
+    border: solid 2px white;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+/* right */
+.right {
+  margin-top: 100px;
+  width: 40%;
+}
+.titleInput {
+    color: white;
+    opacity: 0.7;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.userInput {
+  border-radius: 5px;
+  opacity: 0.9;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+.messageInput{
+    border-radius: 5px;
+    opacity: 0.9;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    height: 250px;
+}
+
+/* Submit Btn */
+
+.submitBtn{
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+.submit {
+  color: #1e1e1e;
+  opacity: 0.7;
+  background-color: white;
+  padding: 13px 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 10%;
+  border: 2px solid #1e1e1e;
+}
+.submit:hover {
+  text-decoration: none;
+  color: #1e1e1e;
+  opacity: 0.5;
+}
+@media (max-width: 1024px) {
+  .phoneNum {
+    font-size: 15px;
+  }
+  .titleInput {
+    font-size: 17px;
+  }
+  .userInput,
+  .messageInput {
+    font-size: 15px;
+  }
+  .submit {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .line {
+    display: none;
+  }
+  .left,
+  .right {
+    width: 80%;
+    height: 50%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .contactContainer {
+    flex-direction: column;
+  }
+  .submit {
+    font-size: 13px;
+  }
+}
+@media (max-width: 560px) {
+  .phoneNum,
+  .userInput,
+  .messageInput {
+    font-size: 13px;
+  }
+}
