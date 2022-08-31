@@ -16,11 +16,13 @@ export default class Welcome extends Component {
             <h1 className="welcome">I'm SOVAN NOUP,</h1>
             <h2 className="job">A Software Developer</h2>
             <p className="bbbbb">
-              single CLI for multiple languages consistent commands to manage
-              all your languages single global config keeping defaults in one
-              place single .tool-versions config file per project support for
-              existing config files .node-version, .nvmrc, .ruby-version for
-              easy migration
+              I am a full stack web developer with a Bachelor degree in Software
+              Engineering from Kirirom Institute of Technology.
+            </p>
+            <p className="bbbbb">
+              An enthusiastic individual who is always willing to do what he is
+              tasked to do as efficiently as possible with perfection. My
+              objective is to soar high in this competitive technology industry.
             </p>
           </div>
           <div className="imgDiv">
