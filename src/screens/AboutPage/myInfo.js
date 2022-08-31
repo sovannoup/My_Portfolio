@@ -30,14 +30,14 @@ export default class myInfo extends Component {
               place.
             </p>
           </div>
-          <div className="oneParag">
+          {/* <div className="oneParag">
             <p className="descc">
               My vision is to make the world a better place. Now almost
               everything is becoming better than ever. It is time for us to
               create more good stuff that helps the world to become a better
               place.
             </p>
-          </div>
+          </div> */}
           <div style={{ marginTop: 50 }}>
             <a href="/contact" className="conbtn">
               Contact Now
