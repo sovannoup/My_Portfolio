@@ -9,7 +9,7 @@ export default class Metatages extends Component {
       main_id: "",
       main_cate: "",
       page: "",
-      site_title: "MT Express",
+      site_title: "NOUP SOVAN",
     };
   }
   componentDidMount() {
