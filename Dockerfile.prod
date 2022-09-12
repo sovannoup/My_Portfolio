@@ -1,7 +1,6 @@
 FROM node:16.17.0 as build
 WORKDIR /app
 COPY package*.json ./
-RUN npm install npm@8.19.1
 RUN npm install
 COPY . .
 CMD npm run build
