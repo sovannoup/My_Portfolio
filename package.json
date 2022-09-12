@@ -39,7 +39,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -67,7 +67,7 @@
     "prettier": "2.7.1"
   },
   "engines": {
-    "node": "16.14.2",
-    "npm": "8.18.0"
+    "node": "16.17.0",
+    "npm": "8.19.1"
   }
 }
