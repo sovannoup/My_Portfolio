@@ -1,7 +1,7 @@
 FROM node:latest
 WORKDIR /app
-COPY ["package.json", "package-lock.json", "./"]
+ADD package*.json .
 RUN npm install
-COPY . .
+ADD . .
 EXPOSE 3000
 CMD ["npm", "start"]
