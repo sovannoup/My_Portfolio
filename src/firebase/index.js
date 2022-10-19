@@ -1,7 +1,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 
-firebase.initializeApp({
+firebase.initializeTestEnvironment({
   apiKey: "AIzaSyAb7CMR4Wcc5hFNlMYaHkBUj3QKK5AqGaU",
   authDomain: "personal-portfolio-082022.firebaseapp.com",
   projectId: "personal-portfolio-082022",
