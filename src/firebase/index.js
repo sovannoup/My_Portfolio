@@ -1,4 +1,5 @@
 import firebase from "firebase/compat/app";
+import { signInAnonymously } from "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 firebase.initializeApp({
@@ -12,9 +13,22 @@ firebase.initializeApp({
 });
 
 let db = firebase.firestore();
+var auth = firebase.auth;
+// auth.signInAnonymously().catch(alert);
+firebase.auth().onAuthStateChanged(async (user) => {
+  if (!user) {
+    await firebase
+      .auth()
+      .signInAnonymously()
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+});
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   firebase,
+  auth,
   db,
 };
