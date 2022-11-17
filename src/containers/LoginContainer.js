@@ -1,6 +1,6 @@
-import { connect } from "react-redux";
-import LoginComponent from "../screens/Login";
-import { userLogin } from "../modules/user/reducer";
+import { connect } from 'react-redux';
+import LoginComponent from '../screens/Login';
+import { userLogin } from '../modules/user/reducer';
 
 const mapStateToProps = (state) => ({
   ...state,

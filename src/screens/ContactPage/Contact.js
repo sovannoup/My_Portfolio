@@ -1,27 +1,30 @@
-import React, { Component, useState } from "react";
-import "../../style/style_component/ContactStyle/mainContact.css";
-import firebase from "../../firebase";
-import Footer from "../Footer";
-import ContactForm from "./contactForm";
+import React, { Component, useState } from 'react';
+import '../../style/style_component/ContactStyle/mainContact.css';
+import firebase from '../../firebase';
+import Footer from '../Footer';
+import ContactForm from './contactForm';
 
 export default function About() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [text, setText] = useState('');
 
   const sendMessage = () => {
-    if (name !== "" && email !== "" && text !== "") {
+    if (name !== '' && email !== '' && text !== '') {
       firebase.db
-        .collection("t_contact")
+        .collection('t_contact')
         .add({ username: name, email: email, message: text })
         .then(() => {
-          alert("Success");
+          setName('');
+          setEmail('');
+          setText('');
+          alert('Success');
         })
         .catch(() => {
-          alert("Failed to send message");
+          alert('Failed to send message');
         });
     } else {
-      alert("Field is required");
+      alert('Field is required');
     }
   };
 
