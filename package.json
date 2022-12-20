@@ -1,4 +1,5 @@
 {
+  "homepage": "https://sovannoup.github.io/home",
   "name": "SOVAN_Portfolio",
   "version": "0.1.0",
   "private": true,
@@ -36,7 +37,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts --max-old-space-size=8192 --optimize-for-size --max_old_space_size=8192 --optimize_for_size build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "nodemon start"
@@ -60,10 +63,11 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "2.7.1"
   },
   "engines": {
-    "node": "16.18.0",
-    "npm": "8.19.2"
+    "node": "16.16.0",
+    "npm": "8.11.0"
   }
 }
