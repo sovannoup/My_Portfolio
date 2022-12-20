@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
   Redirect,
@@ -36,11 +36,11 @@ class App extends Component {
           <Route component={Metatages} />
           <Navbar />
           <Switch>
-            <Route exact path="/" render={() => <Redirect to="/home" />} />
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/projects" component={Project} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="My_Portfolio/" render={() => <Redirect to="/home" />} />
+            <Route exact path="My_Portfolio/home" component={Home} />
+            <Route exact path="My_Portfolio/about" component={About} />
+            <Route exact path="My_Portfolio/projects" component={Project} />
+            <Route exact path="My_Portfolio/contact" component={Contact} />
             <Route component={PageNotFoundComponent} />
           </Switch>
         </Router>
